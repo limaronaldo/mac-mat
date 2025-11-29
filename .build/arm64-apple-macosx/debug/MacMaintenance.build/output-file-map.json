@@ -16,6 +16,13 @@
     "swift-dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.swiftdeps",
     "diagnostics": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.dia"
   },
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/ICloudRecovery.swift": {
+    "dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ICloudRecovery.d",
+    "object": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ICloudRecovery.swift.o",
+    "swiftmodule": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ICloudRecovery~partial.swiftmodule",
+    "swift-dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ICloudRecovery.swiftdeps",
+    "diagnostics": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ICloudRecovery.dia"
+  },
   "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/ProcessManager.swift": {
     "dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.d",
     "object": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.swift.o",

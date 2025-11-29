@@ -1,6 +1,5 @@
 import Foundation
 
-
 enum MacMaintenance {
     static func run() {
         // Initialize logger
@@ -59,6 +58,22 @@ enum MacMaintenance {
         case "config":
             Config.printConfig()
 
+        case "list-icloud-deleted":
+            ICloudRecovery.listRecentlyDeleted()
+
+        case "restore-icloud-file":
+            if args.isEmpty {
+                print("❌ Usage: mac-maint restore-icloud-file <filename>")
+                exit(1)
+            }
+            ICloudRecovery.restoreFile(fileName: args[0])
+
+        case "restore-all-icloud":
+            ICloudRecovery.restoreAll()
+
+        case "open-icloud-trash":
+            ICloudRecovery.openInFinder()
+
         case "help", "-h", "--help":
             showHelp()
 
@@ -70,53 +85,60 @@ enum MacMaintenance {
     }
 
     static func showHelp() {
-        print("""
-        🔧 MacBook Maintenance Tool
+        print(
+            """
+            🔧 MacBook Maintenance Tool
 
-        USAGE:
-            mac-maint <command> [options]
+            USAGE:
+                mac-maint <command> [options]
 
-        SYSTEM MONITORING:
-            status              Show system status (CPU, RAM, disk, battery, uptime)
-            top-processes       List top CPU-consuming processes
-            sync-status         Show file sync status (iCloud, Google Drive, Dropbox)
+            SYSTEM MONITORING:
+                status              Show system status (CPU, RAM, disk, battery, uptime)
+                top-processes       List top CPU-consuming processes
+                sync-status         Show file sync status (iCloud, Google Drive, Dropbox)
 
-        PROCESS MANAGEMENT:
-            restart-process     Restart a specific process
-            optimize-fileprovider   Restart fileproviderd and cloudd
+            PROCESS MANAGEMENT:
+                restart-process     Restart a specific process
+                optimize-fileprovider   Restart fileproviderd and cloudd
 
-        CLEANUP:
-            clear-xcode-cache   Clear Xcode derived data
-            cleanup-caches      Clean application caches
-            clean-browser-cache Clean browser caches (Chrome, Safari, Firefox, Brave)
-            clean-dev-cache     Clean development caches (npm, yarn, brew, pip)
-            clean-logs          Clean system logs
+            CLEANUP:
+                clear-xcode-cache   Clear Xcode derived data
+                cleanup-caches      Clean application caches
+                clean-browser-cache Clean browser caches (Chrome, Safari, Firefox, Brave)
+                clean-dev-cache     Clean development caches (npm, yarn, brew, pip)
+                clean-logs          Clean system logs
 
-        SYNC MANAGEMENT:
-            pause-icloud        Pause iCloud synchronization
-            resume-icloud       Resume iCloud synchronization
+            SYNC MANAGEMENT:
+                pause-icloud        Pause iCloud synchronization
+                resume-icloud       Resume iCloud synchronization
 
-        OTHER:
-            menu                Interactive maintenance menu
-            config              Show current configuration
-            help                Show this help message
+            ICLOUD RECOVERY:
+                list-icloud-deleted List all files in iCloud Recently Deleted
+                restore-icloud-file Restore a specific file from iCloud trash
+                restore-all-icloud  Restore all files from iCloud Recently Deleted
+                open-icloud-trash   Open iCloud trash folder in Finder
 
-        EXAMPLES:
-            mac-maint status
-            mac-maint top-processes
-            mac-maint restart-process Dock
-            mac-maint clear-xcode-cache
-            mac-maint clean-browser-cache
-            mac-maint optimize-fileprovider
+            OTHER:
+                menu                Interactive maintenance menu
+                config              Show current configuration
+                help                Show this help message
 
-        LOGS:
-            Logs are stored in: ~/.mac-maintenance/logs/maintenance.log
+            EXAMPLES:
+                mac-maint status
+                mac-maint top-processes
+                mac-maint restart-process Dock
+                mac-maint clear-xcode-cache
+                mac-maint clean-browser-cache
+                mac-maint optimize-fileprovider
 
-        CONFIG:
-            Config file: ~/.mac-maintenance/config.json
+            LOGS:
+                Logs are stored in: ~/.mac-maintenance/logs/maintenance.log
 
-        For more information, visit: https://github.com/limaronaldo/mac-mat
-        """)
+            CONFIG:
+                Config file: ~/.mac-maintenance/config.json
+
+            For more information, visit: https://github.com/limaronaldo/mac-mat
+            """)
     }
 
     static func showMainMenu() {
@@ -132,7 +154,7 @@ enum MacMaintenance {
             ("5", "Cleanup Caches"),
             ("6", "Pause iCloud"),
             ("7", "Resume iCloud"),
-            ("0", "Exit")
+            ("0", "Exit"),
         ]
 
         for (key, description) in menuItems {
