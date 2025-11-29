@@ -1,0 +1,29 @@
+# Build artifacts
+.build/
+*.swiftmodule
+*.swiftdoc
+*.swiftsourceinfo
+.swiftpm/
+*.xcodeproj/
+DerivedData/
+
+# IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Environment variables
+.env
+.env.local
+
+# Claude-specific (local development only)
+CLAUDE.md
+
+# Logs
+*.log
+logs/
+
+# macOS
+.Trashes
+.Spotlight-V100
+.fseventsd
