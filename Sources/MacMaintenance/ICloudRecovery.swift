@@ -5,21 +5,44 @@ enum ICloudRecovery {
     static func listRecentlyDeleted(sortBy: SortOption = .dateDeleted, filterBy: String? = nil) {
         print("\n🗑️  iCloud Drive - Recently Deleted Files\n")
 
-        let trashPath = "\(NSHomeDirectory())/Library/Mobile Documents/com~apple~CloudDocs/.Trash"
+        // Try multiple possible trash locations
+        let possiblePaths = [
+            "\(NSHomeDirectory())/Library/Mobile Documents/com~apple~CloudDocs/.Trash",
+            "\(NSHomeDirectory())/Library/Mobile Documents/.Trash",
+        ]
 
-        guard FileManager.default.fileExists(atPath: trashPath) else {
-            print("❌ iCloud Drive Recently Deleted folder not found.")
-            print("   Make sure iCloud Drive is enabled on this Mac.\n")
+        var trashPath: String?
+        for path in possiblePaths {
+            if FileManager.default.fileExists(atPath: path) {
+                trashPath = path
+                break
+            }
+        }
+
+        guard let validTrashPath = trashPath else {
+            print("❌ iCloud Drive Recently Deleted folder not found locally.")
+            print("\n💡 This could mean:")
+            print("   1. iCloud Drive isn't enabled on this Mac")
+            print("   2. Your deleted files are on iCloud servers but not synced locally")
+            print("   3. The Recently Deleted folder is empty\n")
+            print("🌐 To recover files from iCloud.com:")
+            print("   1. Go to https://icloud.com")
+            print("   2. Sign in with your Apple ID")
+            print("   3. Click on iCloud Drive")
+            print("   4. Look for 'Recently Deleted' in the sidebar")
+            print("   5. Select files and click 'Recover'\n")
+            print("📱 Or from your iPhone/iPad:")
+            print("   Files app → Browse → iCloud Drive → Recently Deleted\n")
             return
         }
 
         var deletedFiles: [(path: String, name: String, size: Int64, modified: Date)] = []
 
         do {
-            let contents = try FileManager.default.contentsOfDirectory(atPath: trashPath)
+            let contents = try FileManager.default.contentsOfDirectory(atPath: validTrashPath)
 
             for item in contents {
-                let fullPath = (trashPath as NSString).appendingPathComponent(item)
+                let fullPath = (validTrashPath as NSString).appendingPathComponent(item)
                 let attributes = try FileManager.default.attributesOfItem(atPath: fullPath)
 
                 let size = attributes[.size] as? Int64 ?? 0
