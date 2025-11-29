@@ -1,0 +1,54 @@
+{
+  "": {
+    "swift-dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/master.swiftdeps"
+  },
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/CleanupManager.swift": {
+    "dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.d",
+    "object": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.swift.o",
+    "swiftmodule": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.swiftdeps",
+    "diagnostics": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.dia"
+  },
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Config.swift": {
+    "dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.d",
+    "object": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.swift.o",
+    "swiftmodule": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config~partial.swiftmodule",
+    "swift-dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.swiftdeps",
+    "diagnostics": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.dia"
+  },
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/ProcessManager.swift": {
+    "dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.d",
+    "object": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.swift.o",
+    "swiftmodule": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.swiftdeps",
+    "diagnostics": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.dia"
+  },
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SyncManager.swift": {
+    "dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.d",
+    "object": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.swift.o",
+    "swiftmodule": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager~partial.swiftmodule",
+    "swift-dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.swiftdeps",
+    "diagnostics": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.dia"
+  },
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SystemMonitor.swift": {
+    "dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.d",
+    "object": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.swift.o",
+    "swiftmodule": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor~partial.swiftmodule",
+    "swift-dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.swiftdeps",
+    "diagnostics": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.dia"
+  },
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Utils.swift": {
+    "dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.d",
+    "object": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.swift.o",
+    "swiftmodule": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils~partial.swiftmodule",
+    "swift-dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.swiftdeps",
+    "diagnostics": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.dia"
+  },
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/main.swift": {
+    "dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.d",
+    "object": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.swift.o",
+    "swiftmodule": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.swiftdeps",
+    "diagnostics": "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.dia"
+  }
+}

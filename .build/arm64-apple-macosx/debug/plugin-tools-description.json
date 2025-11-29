@@ -1,0 +1,371 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.MacMaintenance-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/sources",
+      "importPath" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/CleanupManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Config.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/ProcessManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SyncManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SystemMonitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Utils.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "MacMaintenance",
+      "moduleOutputPath" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/Modules/MacMaintenance.swiftmodule",
+      "objects" : [
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.swift.o",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.swift.o",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.swift.o",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.swift.o",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.swift.o",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.swift.o",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx12.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "MacMaintenance_main",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g"
+      ],
+      "outputFileMapPath" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/Modules/MacMaintenance.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/CleanupManager.swift",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Config.swift",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/ProcessManager.swift",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SyncManager.swift",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SystemMonitor.swift",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Utils.swift",
+        "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/main.swift"
+      ],
+      "tempsPath" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "MacMaintenance" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "MacMaintenance",
+      "-c",
+      "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/CleanupManager.swift",
+      "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Config.swift",
+      "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/ProcessManager.swift",
+      "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SyncManager.swift",
+      "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SystemMonitor.swift",
+      "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Utils.swift",
+      "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/main.swift",
+      "-I",
+      "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx12.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "MacMaintenance_main",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "MacMaintenance" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/CleanupManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Config.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/ProcessManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SyncManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SystemMonitor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Utils.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/sources"
+    },
+    "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint-entitlement.plist"
+    },
+    "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint.product/Objects.LinkFileList"
+    },
+    "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

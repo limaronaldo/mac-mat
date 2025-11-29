@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "MacMaintenance-arm64-apple-macosx26.0-debug.module": ["<MacMaintenance-arm64-apple-macosx26.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "mac-maint-arm64-apple-macosx26.0-debug.exe": ["<mac-maint-arm64-apple-macosx26.0-debug.exe>"]
+  "main": ["<MacMaintenance-arm64-apple-macosx26.0-debug.module>","<mac-maint-arm64-apple-macosx26.0-debug.exe>"]
+  "test": ["<MacMaintenance-arm64-apple-macosx26.0-debug.module>","<mac-maint-arm64-apple-macosx26.0-debug.exe>"]
+default: "main"
+nodes:
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint":
+    is-mutated: true
+commands:
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/CleanupManager.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Config.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/ProcessManager.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SyncManager.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SystemMonitor.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Utils.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/main.swift"]
+    outputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/sources"]
+    description: "Write auxiliary file /Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/sources"
+
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint-entitlement.plist"]
+    description: "Write auxiliary file /Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint-entitlement.plist"
+
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.swift.o"]
+    outputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint.product/Objects.LinkFileList"
+
+  "/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"]
+    outputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+
+  "<MacMaintenance-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/Modules/MacMaintenance.swiftmodule"]
+    outputs: ["<MacMaintenance-arm64-apple-macosx26.0-debug.module>"]
+
+  "<mac-maint-arm64-apple-macosx26.0-debug.exe>":
+    tool: phony
+    inputs: ["<mac-maint-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    outputs: ["<mac-maint-arm64-apple-macosx26.0-debug.exe>"]
+
+  "C.MacMaintenance-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/CleanupManager.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Config.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/ProcessManager.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SyncManager.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/SystemMonitor.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/Utils.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/main.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/sources"]
+    outputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/Modules/MacMaintenance.swiftmodule"]
+    description: "Compiling Swift Module 'MacMaintenance' (7 sources)"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-module-name","MacMaintenance","-emit-dependencies","-emit-module","-emit-module-path","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/Modules/MacMaintenance.swiftmodule","-output-file-map","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/output-file-map.json","-incremental","-c","@/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/sources","-I","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx12.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","MacMaintenance_main","-swift-version","5","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g","-Xcc","-isysroot","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-Xcc","-F","-Xcc","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-Xcc","-fPIC","-Xcc","-g"]
+
+  "C.mac-maint-arm64-apple-macosx26.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/CleanupManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Config.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/ProcessManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SyncManager.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/SystemMonitor.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/Utils.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/MacMaintenance.build/main.swift.o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint.product/Objects.LinkFileList"]
+    outputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/mac-maint"
+    args: ["/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc","-L","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug","-o","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint","-module-name","mac_maint","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_MacMaintenance_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx12.0","-Xlinker","-add_ast_path","-Xlinker","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/Modules/MacMaintenance.swiftmodule","-plugin-path","/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.1.sdk","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/PrivateFrameworks","-I","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-L","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib","-g"]
+
+  "C.mac-maint-arm64-apple-macosx26.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint-entitlement.plist"]
+    outputs: ["<mac-maint-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/mac-maint"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint-entitlement.plist","/Users/ronaldo/Projects/PERSONAL/mac-mat/.build/arm64-apple-macosx/debug/mac-maint"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/ronaldo/Projects/PERSONAL/mac-mat/Sources/MacMaintenance/","/Users/ronaldo/Projects/PERSONAL/mac-mat/Package.swift","/Users/ronaldo/Projects/PERSONAL/mac-mat/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
